@@ -17,7 +17,7 @@ public class Branchwise {
 	Student s6 =new Student("chaitaya","EEE",96);
 	Student s7 =new Student("deva","cse",98);
 	Student s8 =new Student("jyothish","cse",99);
-	//adding list of students
+	// list of students 
 	List<Student>listOfStudents =List.of(s1,s2,s3,s4,s5,s6,s7,s8);
 	
 	Map<String,List<Student>> mapofStudentsbranchWise =listOfStudents.stream().collect(Collectors.groupingBy(s->s.getBranch()));
